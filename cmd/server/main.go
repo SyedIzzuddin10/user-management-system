@@ -2,7 +2,7 @@ package main
 
 import (
 	"userManagementSystem/handler"
-	"userManagementSystem/service"
+	_ "userManagementSystem/service"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
@@ -10,7 +10,7 @@ import (
 
 func main() {
 
-	_ = service.OpenDB()
+	// _ = service.OpenDB()
 
 	// Echo instance
 	e := echo.New()
